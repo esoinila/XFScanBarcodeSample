@@ -19,7 +19,9 @@ namespace ScanBarcodeSample
         {
             Device.BeginInvokeOnMainThread(() =>
             {
-                scanResultText.Text = result.Text + " (type: " + result.BarcodeFormat.ToString() + ")";
+                //scanResultText.Text = result.Text + " (type: " + result.BarcodeFormat.ToString() + ")";
+                scanResultText.Text = " (type: " + result.BarcodeFormat.ToString() + ")";
+                wantedText.Text = result.Text;
             });
         }
     }

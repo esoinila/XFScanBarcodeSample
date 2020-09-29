@@ -3,9 +3,12 @@
              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms">
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Barcode Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            <Label Text="Get QR-code Content" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" />
         </Frame>
         <Label x:Name="scanResultText" />
+        
+        <Editor x:Name="wantedText" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Text="select and copy read code from here" />
+        
         <zxing:ZXingScannerView IsScanning="True" OnScanResult="ZXingScannerView_OnScanResult" />
     </StackLayout>
 </ContentPage>
